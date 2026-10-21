@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamPortal — Free Premium Gateway</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.08); }
+        }
+        .animate-glow {
+            animation: pulseGlow 7s ease-in-out infinite;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="min-h-full bg-zinc-950 text-zinc-100 flex items-center justify-center relative overflow-x-hidden py-10 px-4">
+
+    <!-- Background Ambient Glow & Mesh -->
+    <div class="fixed inset-0 bg-grid-pattern pointer-events-none opacity-60"></div>
+    <div class="fixed -top-40 -left-40 w-[500px] h-[500px] bg-amber-600/15 rounded-full blur-3xl pointer-events-none animate-glow"></div>
+    <div class="fixed -bottom-40 -right-40 w-[500px] h-[500px] bg-orange-600/10 rounded-full blur-3xl pointer-events-none animate-glow" style="animation-delay: 3.5s;"></div>
+
+    <!-- Main Container Card -->
+    <div class="relative w-full max-w-6xl bg-zinc-900/90 backdrop-blur-2xl border border-zinc-800/80 rounded-3xl shadow-2xl shadow-black/80 overflow-hidden grid grid-cols-1 lg:grid-cols-12 my-auto">
+        
+        <!-- Left Side: Premium Model Showcase & 8-Photo Visual Grid -->
+        <div class="lg:col-span-7 p-6 lg:p-8 bg-zinc-950/60 border-b lg:border-b-0 lg:border-r border-zinc-800/80 flex flex-col justify-between relative overflow-hidden">
+            
+            <!-- Branding Header & Free Access Badge -->
+            <div class="z-10 flex items-center justify-between mb-6">
+                <div class="flex items-center gap-2">
+                    <span class="px-3 py-1 bg-amber-500 text-zinc-950 font-black text-lg tracking-wider rounded-lg shadow-lg shadow-amber-500/20">
+                        STREAM
+                    </span>
+                    <span class="font-bold text-xl tracking-tight text-white">HUB</span>
+                </div>
+                <!-- Prominent FREE Badge -->
+                <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center gap-1.5 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> 100% FREE ACCESS
+                </span>
+            </div>
+
+            <!-- Premium Visual Model Grid (8 Photos) -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 z-10 my-2 max-h-[460px] overflow-y-auto pr-1 custom-scrollbar">
+                
+                <!-- Model 1 -->
+                <div class="group relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[3/4] shadow-md">
+                    <img src="./photo1.jpg" alt="Model 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-1.5 left-2 right-2">
+                        <p class="text-[11px] font-bold text-white truncate">Sophia V.</p>
+                        <p class="text-[9px] text-emerald-400 font-semibold">Free ★ 4.9</p>
+                    </div>
+                </div>
+
+                <!-- Model 2 -->
+                <div class="group relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[3/4] shadow-md">
+                    <img src="./photo2.jpg" alt="Model 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-1.5 left-2 right-2">
+                        <p class="text-[11px] font-bold text-white truncate">Elena R.</p>
+                        <p class="text-[9px] text-amber-400 font-semibold">Live ★ 5.0</p>
+                    </div>
+                </div>
+
+                <!-- Model 3 -->
+                <div class="group relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[3/4] shadow-md">
+                    <img src="./photo3.jpg" alt="Model 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-1.5 left-2 right-2">
+                        <p class="text-[11px] font-bold text-white truncate">Aria M.</p>
+                        <p class="text-[9px] text-emerald-400 font-semibold">Free ★ 4.8</p>
+                    </div>
+                </div>
+
+                <!-- Model 4 -->
+                <div class="group relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[3/4] shadow-md">
+                    <img src="./photo4.jpg" alt="Model 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-1.5 left-2 right-2">
+                        <p class="text-[11px] font-bold text-white truncate">Maya K.</p>
+                        <p class="text-[9px] text-amber-400 font-semibold">Top ★ 4.9</p>
+                    </div>
+                </div>
+
+                <!-- Model 5 -->
+                <div class="group relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[3/4] shadow-md">
+                    <img src="./photo5.jpg" alt="Model 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-1.5 left-2 right-2">
+                        <p class="text-[11px] font-bold text-white truncate">Phoebe T.</p>
+                        <p class="text-[9px] text-emerald-400 font-semibold">Free ★ 5.0</p>
+                    </div>
+                </div>
+
+                <!-- Model 6 -->
+                <div class="group relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[3/4] shadow-md">
+                    <img src="./photo6.jpg" alt="Model 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-1.5 left-2 right-2">
+                        <p class="text-[11px] font-bold text-white truncate">Kavya S.</p>
+                        <p class="text-[9px] text-amber-400 font-semibold">Live ★ 4.9</p>
+                    </div>
+                </div>
+
+                <!-- Model 7 -->
+                <div class="group relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[3/4] shadow-md">
+                    <img src="./photo7.jpg" alt="Model 7" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-1.5 left-2 right-2">
+                        <p class="text-[11px] font-bold text-white truncate">Chloe D.</p>
+                        <p class="text-[9px] text-emerald-400 font-semibold">Free ★ 4.7</p>
+                    </div>
+                </div>
+
+                <!-- Model 8 -->
+                <div class="group relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-[3/4] shadow-md">
+                    <img src="./photo8.jpg" alt="Model 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-1.5 left-2 right-2">
+                        <p class="text-[11px] font-bold text-white truncate">Mariyum P.</p>
+                        <p class="text-[9px] text-amber-400 font-semibold">Top ★ 5.0</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Highlights Bar -->
+            <div class="z-10 pt-4 border-t border-zinc-800/60 flex items-center justify-between text-[11px] text-zinc-400">
+                <div class="flex items-center gap-1"><span class="text-emerald-400 font-bold">✓</span> No Subscription</div>
+                <div class="flex items-center gap-1"><span class="text-amber-400 font-bold">★</span> Ultra HD</div>
+                <div class="flex items-center gap-1"><span class="text-emerald-400 font-bold">✓</span> Instant Access</div>
+            </div>
+        </div>
+
+        <!-- Right Side: Action Buttons & Redirection -->
+        <div class="lg:col-span-5 p-8 lg:p-12 flex flex-col justify-center">
+            
+            <div class="mb-6">
+                <!-- Free Highlight Banner -->
+                <div class="inline-block px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold rounded-lg mb-3">
+                    FREE UNLIMITED ACCESS
+                </div>
+                <h2 class="text-2xl lg:text-3xl font-extrabold tracking-tight text-white">Enter Portal</h2>
+                <p class="text-xs lg:text-sm text-zinc-400 mt-1.5">Click below to unlock full access to all models and streams for free.</p>
+            </div>
+
+            <div class="space-y-4">
+                
+                <!-- BUTTON 1: SIGN IN -->
+                <a href="https://ffb18.com/ZW4vM2c2MDdmMmMyVjFOOEg" target="_blank" rel="noopener noreferrer"
+                    class="w-full py-4 px-6 bg-amber-500 hover:bg-amber-400 text-zinc-950 font-extrabold rounded-xl shadow-lg shadow-amber-500/20 transition-all duration-200 flex items-center justify-center text-sm cursor-pointer block text-center uppercase tracking-wide">
+                    <span>Sign In (Free Access)</span>
+                </a>
+
+                <!-- BUTTON 2: LOG IN -->
+                <a href="https://ffb18.com/ZW4vM2c2MDdmMmMyVjFOOEg" target="_blank" rel="noopener noreferrer"
+                    class="w-full py-4 px-6 bg-zinc-950 hover:bg-zinc-800 border border-zinc-800 rounded-xl text-zinc-200 hover:text-white font-extrabold transition-all duration-200 flex items-center justify-center text-sm cursor-pointer block text-center uppercase tracking-wide">
+                    <span>Log In</span>
+                </a>
+
+            </div>
+
+            <p class="text-center text-[11px] text-zinc-500 mt-8">
+                By entering, you confirm you are 18+ and agree to our free portal terms.
+            </p>
+
+        </div>
+    </div>
+
+</body>
+</html>
